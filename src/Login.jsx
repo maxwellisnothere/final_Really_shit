@@ -18,8 +18,6 @@ const Login = ({ onLogin }) => {
     }, 1500);
   };
 
-  // สีเหลืองหลัก: #FFD600 (Cyber Yellow)
-  
   return (
     <div className="min-h-screen flex bg-[#0b0c0f] font-sans selection:bg-[#FFD600] selection:text-black">
       
@@ -39,7 +37,6 @@ const Login = ({ onLogin }) => {
             <div className="inline-flex p-4 rounded-3xl bg-[#FFD600]/20 mb-8 backdrop-blur-md border border-[#FFD600]/30 shadow-[0_0_30px_rgba(255,214,0,0.2)]">
                 <Zap size={48} className="text-[#FFD600]" fill="#FFD600" />
             </div>
-            {/* ✅ แก้ไขตรงนี้เป็น Aqua Volt */}
             <h1 className="text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
                 Aqua <span className="text-[#FFD600]">Volt</span>
             </h1>
