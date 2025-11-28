@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: hydro-dashboard-ui
+    build: .
+    ports:
+      - "8080:80"  # 👈 เข้าผ่านคอมเราที่พอร์ต 8080 (ข้างในคือ 80)
+    restart: always
+    environment:
+      # ถ้าต้องแก้ IP ใน Build process อาจต้องใช้วิธีอื่น แต่ React Build แล้วคือจบเลย
+      - VITE_MQTT_HOST=192.168.1.xxx  # ⚠️ อ่านหมายเหตุด้านล่าง
